@@ -10,8 +10,8 @@ const config = {
 
 const modList = [
   { modid: 'minecraft', version: '1.20.1' },
-  { modid: 'forge', version: '47.3.0' },
-  { modid: 'FML', version: '47.3.0' },
+  { modid: 'forge', version: '51.2.0' },
+  { modid: 'FML', version: '51.2.0' },
   { modid: 'securitycraft', version: '1.10.1' },
   { modid: 'appleskin', version: '2.5.1' },
   { modid: 'embeddium', version: '0.3.31' },
