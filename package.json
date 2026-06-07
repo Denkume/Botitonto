@@ -11,6 +11,6 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "mineflayer": "^4.37.1"
+    "mineflayer": "^4.14.0"
   }
 }

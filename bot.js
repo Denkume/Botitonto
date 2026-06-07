@@ -1,18 +1,18 @@
 const mineflayer = require('mineflayer');
 
 const config = {
-  host: 'NicotinaUt.aternos.me', // Cambia esto
+  host: 'NicotinaUt.aternos.me',
   port: 28844,
-  username: 'Botitonto',        // Nombre del bot
-  version: '1.21.1'                // Versión de tu servidor
+  username: 'Botitonto',
+  version: '1.20.1',
+  forgeHandshake: true
 };
 
 function createBot() {
   const bot = mineflayer.createBot(config);
 
   bot.on('spawn', () => {
-    console.log('✅ Bot conectado al servidor');
-    // Movimiento aleatorio cada 4 minutos para evitar detección AFK
+    console.log('✅ Bot conectado al servidor con Forge');
     setInterval(() => {
       const moves = ['forward', 'back', 'left', 'right'];
       const move = moves[Math.floor(Math.random() * moves.length)];
