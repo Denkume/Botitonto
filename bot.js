@@ -1,5 +1,5 @@
 const mc = require('minecraft-protocol');
-const forge = require('minecraft-protocol-forge');
+const { forgeHandshake } = require('minecraft-protocol-forge');
 
 const config = {
   host: 'NicotinaUt.aternos.me',
@@ -8,7 +8,6 @@ const config = {
   version: '1.20.1'
 };
 
-// Lista exacta de mods del servidor
 const modList = [
   { modid: 'securitycraft', version: '1.10.1' },
   { modid: 'appleskin', version: '2.5.1' },
@@ -30,7 +29,7 @@ const modList = [
 function connect() {
   const client = mc.createClient(config);
 
-  forge.setHandshakePlugin(client, modList);
+  forgeHandshake(client, modList);
 
   client.on('success', () => {
     console.log('✅ Bot conectado con Forge y mods!');
