@@ -44,8 +44,8 @@ const forgeData = {
 
 function connect() {
   const bot = mineflayer.createBot({
-    host: 'TU_SERVIDOR.aternos.me',
-    port: 25565,
+    host: 'NicotinaUt.aternos.me',
+    port: 28844,
     username: 'Botitonto',
     version: '1.20.1',
     auth: 'offline',
